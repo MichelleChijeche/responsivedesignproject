@@ -1,0 +1,263 @@
+
+
+/*----- General Styles----*/
+
+*{ 
+    
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+      background-color: #fff;
+}
+
+
+
+/*---Header----*/
+
+
+
+span{
+    font-family: 'Changa One', cursive;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+
+    
+}
+
+header{
+    background-image: linear-gradient(to right, #390589 , #AB9BDF);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.mobile ul, .desktop ul{
+    list-style: none;
+}
+
+.mobile li, .desktop li{
+display: inline-block;
+padding: 0px 20px;
+
+}
+
+.mobile ul a, .desktop ul a{
+ color: white;
+}
+
+
+
+
+  
+  .mobile ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .mobile ul li a {
+    font-size: 1.5rem;
+  }
+/*---Hero-----*/
+
+.hero{
+    grid-area: hero;
+    background-image: url(./images/Winning.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height:30rem;
+
+}
+
+.title{
+    width: 200rem;
+    text-align: center;
+    color: #390589;
+    font-family: 'Changa One', cursive;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    font-size: 5.5vw;
+}
+
+/*main content blocks*/
+
+ .contentblockswrapper{
+  align-items: center;
+  gap: 1rem;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  height: auto;
+
+width: 100%;
+
+}
+
+.mainpart{
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    width: 352px;
+    position: relative;;
+    justify-content: flex-end;
+flex-direction: column;
+}
+
+.contentblockswrapper .img{
+    width: 352px;
+    display: block;
+
+}
+
+.mainpart img{
+    width: 100%;
+
+}
+
+.mainpart .text-block h3{
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+    box-sizing: border-box;
+    background: rgb( 27, 27, 27, .5);
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.POM{
+    grid-area: POM;
+}
+
+.POMwrapper{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    color: #390589;
+    font-size: 3rem;
+}
+
+.POM p{font-family: 'Rajdhani', sans-serif;
+    background: rgb( 27, 27, 27, .5);
+    font-size: 1.1rem;
+    
+
+}
+
+p{font-family: 'Rajdhani', sans-serif;
+
+}
+
+footer{
+
+    grid-area: footer;
+ background-color: #AB9BDF;
+  color: white;
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+} 
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social {
+    max-width: 20%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    display: inline-block;
+    column-gap: 1rem;
+  }
+
+  .social a {
+    font-size: 2rem;
+  }
+
+  .disclaimer {
+    margin-top: 1.5rem;
+    font-size: 0.96rem;
+  }
+
+  /* MEDIA QUERIES*/
+
+  @media screen and (max-width: 1024px){
+    header {
+        display: flex;
+
+        align-items: center;
+      }
+    .mobile{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-shrink: 1;
+    }
+      .mobile ul {
+        gap: 3rem;
+      }
+    
+      .desktop {
+        display: none;
+      }
+    
+      span{
+        font-size: 1rem;
+      }
+    
+      .desktop ul {
+        display: none;
+
+  }
+
+  .contentblockswrapper{
+    display: block;
+  
+  }
+
+  .mainpart{
+     header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  
+}}
+
+@media screen and (min-width: 600px) { 
+
+.mobile, .mobile ul, .mobile ul li {
+    display:none;
+}
+
+     li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
