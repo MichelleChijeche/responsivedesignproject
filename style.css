@@ -11,6 +11,9 @@ html {
       background-color: #fff;
 }
 
+body {
+  margin-top: 0;
+}
 
 
 /*---Header----*/
